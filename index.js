@@ -2,6 +2,8 @@ const axios = require('axios');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+var restapikey = ""; // rest api 키를 넣어주세요 ( https://developers.kakao.com/ )
+
 client.on('message', msg => {
 	function translate(str) {
 		axios
@@ -12,7 +14,7 @@ client.on('message', msg => {
 						query: str
 					},
 					headers: {
-						Authorization: 'KakaoAK restapikey'
+						Authorization: `KakaoAK ${restapikey}`
 					}
 				}
 			)
