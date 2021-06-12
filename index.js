@@ -12,7 +12,7 @@ client.on('message', msg => {
 						query: str
 					},
 					headers: {
-						Authorization: 'KakaoAK ab04bb31e63f1cfa2dab2274f281a38f'
+						Authorization: 'KakaoAK restapikey'
 					}
 				}
 			)
